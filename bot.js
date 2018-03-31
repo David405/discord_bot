@@ -14,7 +14,7 @@ const token = '';
 // The ready event is vital, it means that your bot will only start reacting to information
 // from Discord _after_ ready is emitted
 client.on('ready', () => {
-  console.log('Hello ${member} please send a message to @makys or @ian for your KYC verification !');
+  console.log('Hello ${member} welcome to the RChain community server, for more info message @bot!');
 });
 
 // Create an event listener for new guild members
@@ -24,7 +24,7 @@ client.on('guildMemberAdd', member => {
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
   // Send the message, mentioning the member
-  channel.send(`Welcome to ${channel}, ${member} please send a message to @makys or @ian for your KYC verification !`);
+  channel.send(`Welcome to ${channel}, ${member} welcome to the RChain community server, for more info message @bot!);
 });
 
 // Log our bot in
